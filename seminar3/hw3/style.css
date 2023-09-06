@@ -108,7 +108,7 @@ nav {
     gap: 108px;
     align-items: center;
 }
-.Button_meta button{
+button{
     width: 140px;
     height: 50px;
     border-radius: 50px;
@@ -148,4 +148,158 @@ article{
     display: flex;
     justify-content: space-between;
 }
+
+.cards_facilities{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.card_facil {
+    padding-left: 30px;
+    width: 340px;
+    height: 291px;
+    flex-shrink: 0;
+}
+
+.card_facil img {
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    margin-bottom: 25px;
+    margin-top: 40px;
+}
+
+.card_facil h3 {
+    margin-bottom: 17px;
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.card_facil p {
+    margin-bottom: 25px;
+    width: 310px;
+    height: 42px;
+    flex-shrink: 0;
+    color: #666;
+    font-family: Gilroy-Regular;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.card_facil a {
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.shadow_card {
+    background: #FFF;
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+
+}
+.container_wrap{
+    background: #FAFAFA;
+}
+
+.cards_reasons{
+    background: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards_reasons h2{
+    margin-top: 90px;
+    color: #000;
+    text-align: center;
+    font-family: Gilroy-Bold;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cards_reasons p{
+    
+    margin-top: 19px;
+    width: 682px;
+    height: 48px;
+    flex-shrink: 0;
+    color:  #666;
+    text-align: center;
+    font-family: Gilroy-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+.card_reas {
+    width: 370px;
+    height: 549px;
+    flex-shrink: 0;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shadow_cardres{
+    box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.10);
+}
+
+.card_reas img{
+    width: 385px;
+    height: 289px;
+    flex-shrink: 0;
+
+}
+
+.card_reas h3{
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    
+}
+
+.card_reas p{
+    width: 280px;
+    height: 63px;
+    margin-top: 22px;
+    margin-bottom: 39px;
+    color: #AAA;
+    font-size: 15px;
+    line-height: 22px; 
+    text-align: center;
+}
+
+.card_reas button{
+    margin-bottom: 50px;
+}
+
+.card_reas_text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_reas_blocks {
+    margin-top: 70px;
+    margin-bottom: 100px;
+    display:flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
 
