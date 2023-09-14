@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head> 
+<style>
+    *{
+        text-decoration: none;
+    }
+
+    .menu__link:hover{
+        color:brown;
+    }
+
+    .menu__link:active{
+        color:darkgreen;
+    }
+
+    .menu__list:first-child{
+        text-decoration: underline;
+    }
+
+    .menu__list:last-child{
+        font-weight: bold;
+    }
+
+    .menu__list:nth-child(3){
+        background-color: darkgoldenrod;
+    }
+    .icon:hover{
+        fill: coral;
+        transform: scale(3);
+        transition: all 3s ease-in-out;
+        
+    }
+
+</style>
+<body>
+    <ul class="menu">
+        <li class="menu__list"><a href="#" class="menu__link">list-1</a></li>
+        <li class="menu__list"><a href="#" class="menu__link">list-2</a></li>
+        <li class="menu__list"><a href="#" class="menu__link">list-3</a></li>
+        <li class="menu__list"><a href="#" class="menu__link">list-4</a></li>
+      </ul>
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M48 0C21.5 0 0 21.5 0 48V368c0 26.5 21.5 48 48 48H64c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H48zM416 160h50.7L544 237.3V256H416V160zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+</body>
+</html>
