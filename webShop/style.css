@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -60,6 +61,27 @@ header{
     margin-right: 10px;
     flex-shrink: 0; 
     justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+.cart-number {
+    width: 19px;
+    height: 19px;
+    border-radius: 100%;
+    background-color: #F16D7F;
+    position: absolute;
+        top: -9px;
+        right: -5px;
+}
+
+.cart-number p {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    margin: 1px 5px 4px 6px;
 }
 
 .main_baner{
@@ -71,6 +93,7 @@ header{
     display: flex;
     max-width: 1600px;
     margin-bottom: 60px;
+    position: relative;
 }
 
 .main_baner img{
@@ -91,7 +114,6 @@ header{
 
 .header1 h1{
     color: #222;
-    font-family: 'Lato', sans-serif;
     font-size: 48px;
     font-weight: 900;
     line-height: 58px;
@@ -99,7 +121,6 @@ header{
 
 .header1 h2{
     color: #222;
-    font-family: 'Lato', sans-serif;
     font-size: 32px;
     font-weight: 700;
     line-height: 39px;
@@ -107,6 +128,46 @@ header{
 .red {
     color: #F16D7F;
 }
+
+.burger-menu {
+    width: 232px;
+    height: 634px;
+    background-color: #FFF;
+    position: absolute;
+        top: 0px;
+        right: 0px;
+}
+
+.burger-menu h3{
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    margin-top: 32px;
+    margin-left: 33px;
+    margin-bottom: 25px;
+}
+
+.burger-menu h4{
+    color: #F16D7F;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    margin-left: 32px;
+}
+
+.burger-menu p{
+    color: #6F6E6E;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-bottom: 11px;
+    margin-left: 53px;
+}
+
+
 
 .category {
     display: grid;
@@ -156,7 +217,6 @@ header{
 .category h5 {
     color: #FFF;
     text-align: center;
-    font-family: Lato;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -165,7 +225,6 @@ header{
 .category h4 {
     color: #F16D7F;
     text-align: center;
-    font-family: Lato;
     font-size: 24px;
     font-weight: 700;
     line-height: 29px;
@@ -176,7 +235,6 @@ header{
 }
 .catalog__header h3{
     color: #222;
-    font-family: Lato;
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
@@ -186,7 +244,6 @@ header{
 
 .catalog__header p {
     color: #9F9F9F;
-    font-family: Lato;
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
@@ -203,7 +260,54 @@ header{
 }
 
 .catalog_card{
-    background-color: #F8F8F8;;
+    background-color: #F8F8F8;
+}
+
+.card_image{
+    display: flex;
+    width: 360px;
+    height: 420px;
+    position: relative;
+}
+
+
+.card-blackout {
+    display: none;
+    justify-content: center;
+    width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    background-color: rgba(58, 56, 56, 0.86);
+    z-index: 9;
+}
+
+.catalog_card button{
+    width: 139px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    margin-top: 188px;
+    border: solid 1px #FFFFFF;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.card_image:hover .card-blackout{
+    display: flex;
+}
+
+.catalog_card img {
+    width: 360px;
+    height: 420px;
+    flex-shrink: 0;
 }
 
 .card_description{
@@ -213,25 +317,17 @@ header{
     margin-right: 28px;
 }
 
-.catalog_card img{
-    width: 360px;
-    height: 420px;
-    flex-shrink: 0;
-}
 
 .catalog_card h6{
     color: #000;
-    font-family: Lato;
     font-size: 13px;
     font-weight: 400;
     line-height: 16px;
     margin-bottom: 16px;
-
 }
 
 .catalog_card p{
     color: #5D5D5D;
-    font-family: Lato;
     font-size: 14px;
     font-weight: 300;
     line-height: 17px;
@@ -239,7 +335,6 @@ header{
 }
 
 .catalog_card span{
-    font-family: Lato;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -253,7 +348,6 @@ button {
     border:solid 1px #FF6A6A;
     background: none;
     color: #F26376;
-    font-family: Lato;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -264,6 +358,214 @@ button {
     justify-content: center;
 }
 
+.button button:hover{
+    background-color: #F16D7F;
+    color: #FFF;
+}
+
+.features{
+    background-color: #222224;
+    background-size: cover;
+}
+
+.features__wrapper{
+    display: flex;
+    gap: 30px;
+}
+
+.feature-card {
+    display: flex;
+    width: 360px;
+    margin-top: 103px;
+    margin-bottom: 104px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features__wrapper div:nth-child(1) svg{
+    margin-bottom: 28px;
+}
+
+.features__wrapper div:nth-child(2) svg{
+    margin-bottom: 19px;
+}
+.features__wrapper div:nth-child(3) svg {
+    margin-bottom: 25px;
+}
+
+.feature-card h5{
+    color: #FBFBFB;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.feature-card p{
+    width: 310px;
+    height: 34px;
+    color: #FBFBFB;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+}
+
+.copyright{
+    background-image: url(./img/Layer\ 41.png);
+    background-size: cover;
+
+}
+
+.copyright-background{
+    background-color: rgba(244, 244, 244, 0.70);
+    background-size: cover;  
+}
+
+.copyright__wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 327px;
+}
+
+.author{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 97px;
+}
+
+.author img{
+    width: 96px;
+    height: 96px;
+}
+
+.author p{
+    width: 359px;
+    height: 99px;
+    color: #222224;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 126px;
+}
+
+.author p span{
+    font-style: italic;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-top: 150px;
+}
+
+.subscribe-text{
+    width: 557px;
+    height: 61px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+}
+
+.subscribe-text h4{
+    color: #222224;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.subscribe-text h5{
+    color: #222224;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.subscribe form{
+    display: flex;
+}
+
+.subscribe input{
+    width: 103px;
+    height: 36px;
+    border-radius: 80px 0px 0px 80px;
+    border: none;
+    background-color: #E1E1E1;
+    padding:  7px 131px 6px 22px ;
+    color: #222224;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.subscribe button{
+    width: 100px;
+    height: 49px;
+    border-radius:  0px 80px 80px 0px;
+    border: none;
+    background-color: #E05C6E;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+footer{
+    background-color: #222224;
+    background-size: cover;
+}
+
+.footer{
+    display: flex;
+    justify-content: between;
+    align-items: center;
+    gap: 655px;
+    
+}
+
+.footer p{
+    width: 332px;
+    height: 19px;
+    color: #FBFBFB;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.icon__container{
+    display: flex;
+    gap: 7px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.icon-box {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    background-color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box:hover{
+    background-color: #F16D7F;
+}
+
+.icon-box:hover svg {
+    fill:#FFFFFF;
+}
+
+
+
 @media (max-width: 1140px) and (min-width: 768px) {
 
 .container {
@@ -272,6 +574,11 @@ button {
 
 header{
     height: 74px;
+}
+
+.header_wrap {
+    padding-left: 32px;
+    padding-right: 41px;
 }
 
 .main_baner img {
@@ -341,15 +648,10 @@ header{
     grid-template-columns: 360px 360px;
     grid-template-rows: 581px 581px 581px;
     gap: 16px;
-    margin-bottom: 48px;
 }
 
-.catalog_card{
-    background-color: #F8F8F8;
-}
 
 .card_description{
-    margin-top: 24px;
     margin-bottom: 20px;
     margin-left: 18px;
     margin-right: 29px;
@@ -372,18 +674,63 @@ button {
     margin-bottom: 70px;
 }
 
-.button{
-    display: flex;
-    justify-content: center;
+
+.features__wrapper{
+    gap: 48px;
+    padding-top: 48px;
+    padding-bottom: 64px;
+    flex-direction: column;
+    align-items: center;
 }
+
+.feature-card {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.copyright__wrapper{
+    flex-direction: column;
+    gap: 48px;
+}
+
+.author{
+    margin-top: 64px;
+}
+
+.author p{
+    margin-bottom: 0px;
+}
+
+.subscribe {
+    margin-top: 0px;
+}
+
+.subscribe-text h4{
+    line-height: 39px;
+}
+.subscribe-text h5{
+    line-height: 39px;
+}
+
+.footer{
+    gap: 305px;
+    padding-left: 32px;
+    padding-right: 34px;
+}
+
 }
 
 @media (max-width: 767px) {
     
     .container {
-        max-width: 343px;
+        max-width: 375px;
     }
 
+    .header_wrap {
+        padding-left: 16px;
+        padding-right: 26px;
+    }
+    
     .hidden {
         display:none;
     }
@@ -461,6 +808,8 @@ button {
     .catalog_card img{
         width: 359px;
         height: 419px;
+        background-position: center;
+        background-size: cover;
     }
     
     .catalog_card h6{
@@ -470,5 +819,63 @@ button {
     .catalog_card p{
         margin-bottom: 18px;
     }
-  
+
+    .features__wrapper{
+        gap: 47px;
+        padding-top: 48px;
+        padding-bottom: 81px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .feature-card {
+        width: 348px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .copyright__wrapper{
+        flex-direction: column;
+        gap: 59px;
+    }
+    
+    .author{
+        gap: 30px;
+        margin-top: 64px;
+    }
+    .author p{
+        margin-bottom: 0px;
+    }
+    
+    .subscribe {
+        margin-top: 0px;
+    }
+    
+    .subscribe-text{
+        max-width: 271px;
+        height: 54px;
+    }
+    
+    .subscribe-text h4{
+        line-height: 37px;
+    }
+    .subscribe-text h5{
+        font-size: 14px;
+        line-height: 37px;
+    }
+    
+    .footer{
+        gap: 40px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer p{
+        width: 251px;
+        margin-bottom: 9px;
+    }
+    
+    .icon__container{
+        margin-top: 43px;
+    }
 }
