@@ -1,9 +1,10 @@
-*
-{
+@import './fonts/stylesheet.css';
+
+*{
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato';
 }
 
 body {
@@ -92,7 +93,7 @@ header{
 .baner_wraper{
     display: flex;
     max-width: 1600px;
-    margin-bottom: 60px;
+    margin-bottom: 65px;
     position: relative;
 }
 
@@ -138,6 +139,12 @@ header{
         right: 0px;
 }
 
+.menu-hidden{
+    display: none;
+}
+
+
+
 .burger-menu h3{
     color: #000;
     font-size: 14px;
@@ -149,7 +156,7 @@ header{
 }
 
 .burger-menu h4{
-    color: #F16D7F;
+    color: #eb0827;
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
@@ -181,28 +188,28 @@ header{
     width: 360px;
     height: 260px;
     flex-shrink: 0;
-    background-image: url(./img/1st_woman.png);
+    background-image: url(./img/1st_woman.webp);
 }
 
 .category_2ndimg {
     width: 360px;
     height: 260px;
     flex-shrink: 0;
-    background-image: url(./img/2nd_man.png);
+    background-image: url(./img/2nd_man.webp);
 }
 
 .category_3dimg {
     width: 360px;
     height: 260px;
     flex-shrink: 0;
-    background-image: url(./img/3d_kids.png);
+    background-image: url(./img/3d_kids.webp);
 }
 
 .category_4thimg {
     width: 1140px;
     height: 180px;
     flex-shrink: 0;
-    background-image: url(./img/4th_picture.png);
+    background-image: url(./img/4th_picture.webp);
 }
 
 .category_background {
@@ -214,7 +221,7 @@ header{
     align-items: center;
 }
 
-.category h5 {
+.category p {
     color: #FFF;
     text-align: center;
     font-size: 16px;
@@ -243,7 +250,7 @@ header{
 }
 
 .catalog__header p {
-    color: #9F9F9F;
+    color: #797575;
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
@@ -318,7 +325,7 @@ header{
 }
 
 
-.catalog_card h6{
+.catalog_card h4{
     color: #000;
     font-size: 13px;
     font-weight: 400;
@@ -338,13 +345,14 @@ header{
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
+    color: #eb0827;
 }
 
 button {
     width: 212px;
     height: 48px;
     flex-shrink: 0;
-    margin-bottom: 60px;
+    margin-bottom: 95px;
     border:solid 1px #FF6A6A;
     background: none;
     color: #F26376;
@@ -357,6 +365,7 @@ button {
     display: flex;
     justify-content: center;
 }
+
 
 .button button:hover{
     background-color: #F16D7F;
@@ -382,14 +391,14 @@ button {
     align-items: center;
 }
 
-.features__wrapper div:nth-child(1) svg{
+.features__wrapper div:nth-child(2) svg{
     margin-bottom: 28px;
 }
 
-.features__wrapper div:nth-child(2) svg{
+.features__wrapper div:nth-child(3) svg{
     margin-bottom: 19px;
 }
-.features__wrapper div:nth-child(3) svg {
+.features__wrapper div:nth-child(4) svg {
     margin-bottom: 25px;
 }
 
@@ -412,7 +421,7 @@ button {
 }
 
 .copyright{
-    background-image: url(./img/Layer\ 41.png);
+    background-image: url(./img/Layer\ 41.webp);
     background-size: cover;
 
 }
@@ -424,8 +433,8 @@ button {
 
 .copyright__wrapper{
     display: flex;
-    justify-content: center;
-    gap: 327px;
+    justify-content: space-between;
+    gap: 223px;
 }
 
 .author{
@@ -435,6 +444,7 @@ button {
     align-items: center;
     gap: 30px;
     margin-top: 97px;
+    
 }
 
 .author img{
@@ -459,6 +469,7 @@ button {
 
 .subscribe {
     display: flex;
+    max-width: 557px;
     flex-direction: column;
     align-items: center;
     gap: 32px;
@@ -481,11 +492,11 @@ button {
     font-weight: 700;
     line-height: 40px;
 }
-.subscribe-text h5{
+.subscribe-text p{
     color: #222224;
     font-size: 18px;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 30px;
 }
 
 .subscribe form{
@@ -510,7 +521,7 @@ button {
     height: 49px;
     border-radius:  0px 80px 80px 0px;
     border: none;
-    background-color: #E05C6E;
+    background-color: #eb0827;
     color: #FFF;
     text-align: center;
     font-size: 14px;
@@ -525,7 +536,7 @@ footer{
 
 .footer{
     display: flex;
-    justify-content: between;
+    justify-content: space-between;
     align-items: center;
     gap: 655px;
     
@@ -708,7 +719,7 @@ button {
 .subscribe-text h4{
     line-height: 39px;
 }
-.subscribe-text h5{
+.subscribe-text p{
     line-height: 39px;
 }
 
@@ -859,7 +870,7 @@ button {
     .subscribe-text h4{
         line-height: 37px;
     }
-    .subscribe-text h5{
+    .subscribe-text p{
         font-size: 14px;
         line-height: 37px;
     }
